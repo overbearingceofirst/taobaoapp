@@ -1,3 +1,31 @@
+//   数据渲染
+$.ajax({
+    url: "https://www.jackjones.com.cn/api/goods/dmpRecommendGoods?projectName=firstPageHot&brand=two&userId=&itemId=&brandCode=JACKJONES",
+    type: "GET",
+    // date:{},
+    dataType: "json",
+    success: function (res) {
+        console.log(res)
+        var data=res.data;
+        console.log(data)
+        var kuan=document.getElementsByClassName("kuan")[0];
+        var str="";
+        var kk=[33,56,48,78,88,32,62,54,58,110]
+        for(var i=0;i<10;i++){
+            str+=' <li>'
+            +'<div class="pic">'
+                +'<img src="https://cdn.bestseller.com.cn'+data[i].picurls[0]+'" alt="">'
+            +'</div>'
+            +'<div class="wenzi">'+data[i].goodsName+'</div>'
+            +'<p class="pirce">￥'+data[i].originalPrice+'</p>'
+            +'<p class="all"><span>月销'+kk[i]+'笔</span><span>免邮费</span></p>'
+        +'</li>'
+        }
+        kuan.innerHTML=str;
+    }
+})
+
+
 function rem (doc, win) {  
     let docEl = doc.documentElement; //html 考虑以及兼容了 屏幕旋转的事件
     //判断事件orientationchange 横屏 事件  或resize 

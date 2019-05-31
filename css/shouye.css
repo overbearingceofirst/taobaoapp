@@ -197,10 +197,35 @@ body{
 .kuan{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 .kuan li{
-    width: 50%;
-    height: 2.83rem;
+    width: 45%;
+    height: 2.8rem;
     margin: 0.09rem;
-    box-sizing: border-box;
+    box-sizing:border-box;
+}
+.pic img{
+    width: 1.84rem;
+    height: 1.84rem;
+}
+.wenzi{
+    width: 1.84rem;
+    height: .43rem;
+    line-height: .15rem;
+    margin-top: .07rem;
+    font-size: .12rem;
+}
+.pirce{
+    color: red;
+    margin-top: .07rem;
+    font-size: .12rem;
+}
+.all{
+    width: 1.84rem;
+    display: inline-flex;
+    justify-content:space-between;
+    font-size: .12rem;
+    color: #a2a2a2;
+    margin-top: .07rem;
 }
