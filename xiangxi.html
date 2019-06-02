@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>详细页</title>
+    <!-- 引入css -->
+    <link rel="stylesheet" href="css/xiangxi.css">
+    <!-- 引入icon -->
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!-- 引入轮播的css -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- jq -->
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <!-- 轮播 -->
+    <div class="swiper-container" style="position: relative">
+        <!-- 轮播前的透明处 -->
+        <div class="navigation">
+            <div class="Version">
+                <i class="iconfont">&#xe60e;</i>
+            </div>
+            <div class="permissions">
+                <div class="floael">
+                    <i class="iconfont" style="margin-left:.03rem;font-size: .21rem;">&#xe600;</i>
+                </div>
+                <div class="floatR">
+                    <i class="iconfont" style="margin-left:.03rem;font-size: .21rem;">&#xe637;</i>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/pic1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/pic2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/pic3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                    <img src="img/pic3.png" alt="">
+                </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        
+    </div>
+    <!-- 价钱 -->
+    <div class="div">
+        <p class="pirce">
+            <span>￥1155-2000</span><span>惊喜价</span>
+        </p>
+        <p class="oldpirce">
+            <s>价格￥9999-10000</s>
+        </p>
+        <p class="youhui">
+            <span>该商品最高可享受3期免息优惠</span>
+        </p>
+        <p class="tip">
+            <span>雪纺印花百褶裙半身裙，简约的线条和版型上身很好看，整体更加有看点</span><span><i class="iconfont" style="font-size: .20rem">&#xe684;</i></span>
+        </p>
+        <p class="all">
+            <span>快递：0.00</span>
+            <span>月销15</span>
+            <span>江苏苏州</span>
+        </p>
+    </div>
+    <!-- 阴影 -->
+    <div class="yin"></div>
+    <p class="youhui">
+        <span>优惠</span>
+        <span>促销</span>
+        <span>每人限购两件;此优惠限量2件,超出该...</span>
+        <span>查看</span>
+    </p>
+    <p class="youhui2">
+        <span>活动</span>
+        <span><i class="iconfont">&#xe62a;</i>下单有礼</span>
+        <span>此下单可集阳光兑换水果</span>
+        <span><i class="iconfont">&#xe637;</i></span>
+    </p>
+    <!-- 阴影 -->
+    <div class="yin" style="margin-bottom:.5rem;"></div>
+    <!-- 底部 -->
+    <div class="Footer">
+        <div class="foot">
+            <i class="iconfont" style="color: #2597db;">&#xe609;</i>
+            <p>客服</p>
+        </div>
+        <div class="foot">
+                <i class="iconfont">&#xe650;</i>
+                <p>微淘</p>
+        </div>
+        <div class="foot">
+                <i class="iconfont">&#xe6cf;</i>
+                <p>发现</p>
+        </div>
+        <div class="foot2" style="background: #fe9402">
+                <p>购物车</p>
+        </div>
+        <div class="foot2" style="background: red;">
+                <p>我的商场</p>
+        </div>
+    </div>
+    <script src="js/xiangxi.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>              
+        var swiper = new Swiper('.swiper-container', {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      
+    </script>
+</body>
+</html>
